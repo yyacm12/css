@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: red;
+            position: absolute;
+            padding: 30px;
+            padding-left: 50px;
+            animation: myfirst 10s infinite;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        @keyframes myfirst {
+            0% {
+                background: green;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background: red;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background: pink;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background: orange;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background: white;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        div:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>快来摇摆</div>
+</body>
+
+</html>
